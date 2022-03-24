@@ -114,6 +114,16 @@ section {
           transform: translateY(-50%);
 }
 
+.controls .active-btn {
+  background-color: var(--color-secondary) !important;
+  -webkit-transition: var(--transition-effect);
+  transition: var(--transition-effect);
+}
+
+.controls .active-btn i {
+  color: var(--color-white) !important;
+}
+
 .controls .control {
   padding: 1rem;
   cursor: pointer;
