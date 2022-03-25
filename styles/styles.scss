@@ -61,26 +61,45 @@ section{
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: #27AE60;
 }
 
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: #454e56;
 }
 
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: #27AE60;
 }
 
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: #454e56;
 }
 
 .sec5{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: #27AE60;
+}
+
+.active{
+    display: block;
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+        0%{
+            transform: translateY(-100%) scaleY(0);
+        }
+        100%{
+            transform: translateY(0) scaleY(1);
+        }
+        
+    }
 }
 
 .controls{

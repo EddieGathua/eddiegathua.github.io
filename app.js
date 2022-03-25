@@ -11,6 +11,26 @@ function activateCurrentButton(){
             this.className += 'active-btn';
         });
     }
+
+   for(let j = 0; j < allSections.length; j++){
+    allSections[j].addEventListener('click', (e) =>{
+        const id = e.target.dataset.id;
+        if(id){
+            sectionBtn.forEach((btn) => {
+                btn.classList.remove('active');
+            });
+
+            //hide other sections
+            sections.forEach((section) => {
+                section.classList.remove('active');
+            });
+
+            const element = document.getElementById(id);
+            element.classList.add('active');
+
+        }
+    });
+   }
 }
 
 activateCurrentButton();
