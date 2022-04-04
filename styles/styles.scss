@@ -537,3 +537,39 @@ section{
     opacity: 1;
     transform: scale(1);
 }
+
+/*Contacts*/
+
+.contact-content-container{
+    display: flex;
+    padding-top: 3.5rem;
+    .left-contact{
+        flex: 2;
+    }
+    .right-contact{
+        flex: 3;
+        margin-left: 3rem;
+        .input-control{
+            margin: 1.5rem 0;
+            input, textarea{
+                border-radius: 30px;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                padding: .8rem 1.1rem;
+                outline: none;
+                border: none;
+                background-color: var(--color-grey-5);
+                width: 100%;
+                color: var(--color-white);
+                resize: none;
+            }
+        }
+        .inputs{
+            display: flex;
+            :last-child{
+                margin-left: 1.5rem;
+            }
+        }
+    }
+}
