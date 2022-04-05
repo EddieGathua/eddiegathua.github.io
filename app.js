@@ -2,6 +2,7 @@ const sections = document.querySelectorAll('.section');
 const sectionBtn = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelectorAll('.main-content');
+const themeBtn = document.querySelector('.theme-btn');
 
 function activateCurrentButton(){
     for(let i = 0; i < sectBtn.length; i++){
@@ -33,4 +34,12 @@ function activateCurrentButton(){
    }
 }
 
+function themeChange(){
+    themeBtn.addEventListener('click', () => {
+        let element = document.body;
+        element.classList.toggle('light-mode');
+    });
+}
+
 activateCurrentButton();
+themeChange();
