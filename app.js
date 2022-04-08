@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll('.section');
+const sections = document.querySelectorAll('.container');
 const sectionBtn = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelectorAll('.main-content');

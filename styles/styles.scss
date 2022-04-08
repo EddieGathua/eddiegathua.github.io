@@ -74,47 +74,31 @@ section{
     padding: 3rem 18rem;
 }
 
-.section{
+.container{
+    display: none;
     transform: translateY(-100%) scale(0);
     transition: var(--transition-effect);
     background-color: var(--color-primary);
 }
 
 @media screen and (max-width: 600px) {
-    .section{
+    .container{
         padding: 2rem 2.5rem !important;
     }
 }
 
-.sec1{
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
-.sec2{
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
-.sec3{
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
-.sec4{
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
-.sec5{
-    display: none;
-    transform: translateY(0) scale(1);
+@media screen and (max-width: 1432px) {
+    .container{
+        padding: 7rem 11rem;
+    }
 }
 
 .active{
     display: block;
-    animation: scaleAnim 1s ease-in-out;
-    @keyframes scaleAnim {
+    animation: appear 1s ease-in-out;
+    transform: translateY(0) scaleY(1);
+}
+@keyframes appear{
         0%{
             transform: translateY(-100%) scaleY(0);
         }
@@ -122,7 +106,6 @@ section{
             transform: translateY(0) scaleY(1);
         }
         
-    }
 }
 
 .controls{
@@ -248,8 +231,8 @@ section{
             display: none;
         }
         .image{
-            margin: 0 auto !important;
-            width: 90% !important;
+            margin: 0 auto;
+            width: 90%;
         }
     }
 
@@ -265,6 +248,15 @@ section{
         }
     }
 }
+
+@media screen and (max-width: 1250px) {
+    .header-content{
+        .right-header{
+            padding-right: 9rem;
+        }
+    }
+}
+
 .btn-container{
     display: flex;
     align-self: flex-start;
@@ -380,6 +372,7 @@ section{
                 }
                 .small-text{
                     padding-left: 3rem;
+                    font-size: 1.2rem;
                     position: relative;
                     text-transform: uppercase;
                     color: var(--color-grey-1);
@@ -428,6 +421,15 @@ section{
     }
 }
 
+@media screen and (max-width: 1070px) {
+    .about-container{
+        grid-template-columns: repeat(1, 1fr);
+        .right-about{
+            padding-top: 2.5rem;
+        }
+    }
+}
+
 .about-stats{
     padding-bottom: 4rem;
     .progress-bars{
@@ -460,6 +462,7 @@ section{
                         height: 100%;
                         background-color: var(--color-secondary);
                         transition: var(--transition-effect);
+                        width: 60%;
                     }
                     .html{
                         width: 90%;
@@ -534,7 +537,7 @@ section{
         border-left: 1px solid var(--color-grey-5);
         .timeline-icon{
             position: absolute;
-            left: -25px;
+            left: -27px;
             background-color: var(--color-secondary);
             width: 50px;
             height: 50px;
@@ -660,6 +663,18 @@ section{
     }
 }
 
+@media screen and (max-width: 1250px) {
+    .portfolios{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .portfolios{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .portfolio-items:hover .hover-item{
     opacity: 1;
     transform: scale(1);
@@ -767,6 +782,24 @@ section{
 }
 
 @media screen and (max-width: 600px) {
+    .contact-content-container{
+        flex-direction: column;
+        .right-contact{
+            margin-left: 0;
+            margin-top: 2.5rem;
+            margin-bottom: 6rem;
+            .inputs{
+                flex-direction: column;
+                :last-child{
+                    margin-left: 0;
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1432px) {
     .contact-content-container{
         flex-direction: column;
         .right-contact{
