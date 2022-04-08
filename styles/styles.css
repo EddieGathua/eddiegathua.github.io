@@ -83,6 +83,12 @@ section {
   background-color: var(--color-primary);
 }
 
+@media screen and (max-width: 600px) {
+  .section {
+    padding: 2rem 2.5rem !important;
+  }
+}
+
 .sec1 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
@@ -429,6 +435,18 @@ section {
   font-size: 5.0rem;
 }
 
+@media screen and (max-width: 600px) {
+  .main-title h2 {
+    font-size: 3rem;
+  }
+  .main-title h2 span {
+    font-size: 3rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 3rem;
+  }
+}
+
 .about-container {
   display: -ms-grid;
   display: grid;
@@ -514,6 +532,24 @@ section {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 600px) {
+  .about-container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .about-container .right-about {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding-top: 2.5rem;
+  }
+  .about-container .left-about {
+    padding-right: 0;
+  }
+  .about-container .left-about p {
+    padding-left: 0;
+  }
+}
+
 .about-stats {
   padding-bottom: 4rem;
 }
@@ -586,6 +622,13 @@ section {
 
 .about-stats .progress-bars .progress-bar .progress-container .progress .css {
   width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .about-stats .progress-bars {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .stats-title {
@@ -690,6 +733,14 @@ section {
 
 .timeline .timeline-item p {
   color: var(--color-grey-2);
+}
+
+@media screen and (max-width: 600px) {
+  .timeline {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
 }
 
 /*Portfolio*/
@@ -798,6 +849,15 @@ section {
 
 .portfolios .portfolio-items .hover-item .icons .icon:hover i {
   background-color: var(--color-primary);
+}
+
+@media screen and (max-width: 600px) {
+  .portfolios {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+    margin-top: 1rem;
+  }
 }
 
 .portfolio-items:hover .hover-item {
@@ -956,6 +1016,51 @@ section {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-content-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-content-container .right-contact {
+    margin-left: 0;
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
+  }
+  .contact-content-container .right-contact .inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-content-container .right-contact .inputs :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0;
+  }
+  .contact-item p {
+    font-size: 15px;
+    color: var(--color-grey-2);
+  }
+  .contact-item span {
+    font-size: 15px;
+  }
+  .contact-item .icon {
+    -ms-grid-columns: (1fr)[25px];
+        grid-template-columns: repeat(25px, 1fr);
+  }
 }
 
 .theme-btn {

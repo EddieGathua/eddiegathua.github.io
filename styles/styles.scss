@@ -80,6 +80,12 @@ section{
     background-color: var(--color-primary);
 }
 
+@media screen and (max-width: 600px) {
+    .section{
+        padding: 2rem 2.5rem !important;
+    }
+}
+
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
@@ -329,6 +335,20 @@ section{
     }
 }
 
+@media screen and (max-width: 600px) {
+    .main-title{
+        h2{
+            font-size: 3rem;
+            span{
+                font-size: 3rem;
+            }
+            .bg-text{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
 .about-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -392,6 +412,22 @@ section{
     }
 }
 
+@media screen and (max-width: 600px) {
+    .about-container{
+        grid-template-columns: repeat(1, 1fr);
+        .right-about{
+            grid-template-columns: repeat(1, 1fr);
+            padding-top: 2.5rem;
+        }
+        .left-about{
+            padding-right: 0;
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+}
+
 .about-stats{
     padding-bottom: 4rem;
     .progress-bars{
@@ -439,6 +475,14 @@ section{
                     }
                 }   
             }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-stats{
+        .progress-bars{
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
@@ -528,6 +572,13 @@ section{
     }
 }
 
+@media screen and (max-width: 600px) {
+    .timeline{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+    }
+}
+
 /*Portfolio*/
 
 .portfolio-text{
@@ -598,6 +649,14 @@ section{
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolios{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+        margin-top: 1rem;
     }
 }
 
@@ -703,6 +762,41 @@ section{
         .submit-btn{
             display: flex;
             justify-content: flex-start;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-content-container{
+        flex-direction: column;
+        .right-contact{
+            margin-left: 0;
+            margin-top: 2.5rem;
+            margin-bottom: 6rem;
+            .inputs{
+                flex-direction: column;
+                :last-child{
+                    margin-left: 0;
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-item{
+        flex-direction: column;
+        margin: 1rem 0;
+        p{
+            font-size: 15px;
+            color: var(--color-grey-2);
+        }
+        span{
+            font-size: 15px;
+        }
+        .icon{
+            grid-template-columns: repeat(25px, 1fr);
         }
     }
 }
