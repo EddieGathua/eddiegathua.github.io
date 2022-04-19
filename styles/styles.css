@@ -203,7 +203,7 @@ section {
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
   width: 68%;
-  height: 90%;
+  height: 75%;
   margin-left: 4rem;
   background-color: var(--color-black);
   -webkit-transition: var(--transition-effect);

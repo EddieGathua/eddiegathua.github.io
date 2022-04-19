@@ -358,16 +358,16 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="" class="contact-form">
+                        <form method="post" action="email.php" class="contact-form">
                             <div class="input-control inputs">
-                                <input type="text" required placeholder="Your Name">
-                                <input type="email" required placeholder="Your Email">
+                                <input type="text" required placeholder="Your Name" name="name">
+                                <input type="email" required placeholder="Your Email" name="email">
                             </div>
                             <div class="input-control">
-                               <input type="text" required placeholder="Subject">
+                               <input type="text" required placeholder="Subject" name="subject">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Give Your Feedback"></textarea>
+                                <textarea name="feedback" id="" cols="15" rows="8" placeholder="Give Your Feedback"></textarea>
                             </div>
                             <div class="submit-btn">
                                 <a href="" class="main-btn">
