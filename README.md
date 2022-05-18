@@ -2,7 +2,7 @@
 This is the first version of my personal portfolio website. 
 I am using HTML, CSS and Javascript to make this website. 
 
-This portfoilio website has five sections which are, HOME, ABOUT, PORTFOLIO, AND CONTACT.
+This portfoilio website has four sections which are, HOME, ABOUT, PORTFOLIO, AND CONTACT.
 
 The HOME section contains an image of myself and a brief description of who I am and the work I do as a programmer.
 
