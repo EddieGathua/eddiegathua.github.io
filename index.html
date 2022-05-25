@@ -396,19 +396,26 @@
               </div>
             </div>
             <div class="right-contact">
-              <form method="post" action="" class="contact-form">
+              <form
+                method="post"
+                action=""
+                class="contact-form"
+                id="contactForm"
+              >
                 <div class="input-control inputs">
                   <input
                     type="text"
                     required
                     placeholder="Your Name"
                     name="name"
+                    id="name"
                   />
                   <input
                     type="email"
                     required
                     placeholder="Your Email"
                     name="email"
+                    id="email"
                   />
                 </div>
                 <div class="input-control">
@@ -417,12 +424,13 @@
                     required
                     placeholder="Subject"
                     name="subject"
+                    id="subject"
                   />
                 </div>
                 <div class="input-control">
                   <textarea
                     name="feedback"
-                    id=""
+                    id="feedback"
                     cols="15"
                     rows="8"
                     placeholder="Give Your Feedback"
